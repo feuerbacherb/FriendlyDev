@@ -1,6 +1,7 @@
 import type { Route } from "./+types/index";
 import { useEffect } from "react";
 import FeaturedProjects from "~/components/FeaturedProjects";
+import AboutPreview from "~/components/AboutPreview";
 import type { Project } from "~/types";
 
 export function meta({}: Route.MetaArgs) {
@@ -27,6 +28,7 @@ const HomePage = ({ loaderData }: Route.ComponentProps) => {
         projects={projects}
         count={2}
       />
+      <AboutPreview />
     </>
   );
 };
